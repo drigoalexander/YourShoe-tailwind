@@ -21,3 +21,17 @@ db.collection('ShipDet').onSnapshot( snapshot => {
       }
     })
   })
+
+
+  const deldat = document.querySelector('.sukses');
+deldat.addEventListener('click', evt => {
+  console.log(evt);
+  if(evt.target.tagName === 'BUTTON'){
+    const id = evt.target.getAttribute('data-id');
+    db.collection('ShipDet').doc(id).delete().then(function(doc){
+
+      window.location.href = "./index.html"
+      
+    })
+  }
+});

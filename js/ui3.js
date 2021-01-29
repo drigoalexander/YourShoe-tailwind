@@ -1,7 +1,7 @@
 const addData = (data, id) => {
 
   const datasuk = `
-    <div class="dat container min-h-screen px-4  data-id="${id}" ">
+    <div class="dat container min-h-screen px-4" data-id="${id}">
     <div class="flex flex-col items-center justify-center">
       <div class="w-full text-center md:w-4/12">
         <img
@@ -15,7 +15,8 @@ const addData = (data, id) => {
         </p>
         <button
           href="index.html"
-          class="dbcart inline-flex justify-center w-full px-4 py-2 mt-4 text-black transition-all duration-200 transform bg-yellow-100 rounded-full focus:bg-black focus:text-yellow-100 md:w-auto hover:scale-110 motion-reduce:transform-none">
+          class="dbcart inline-flex justify-center w-full px-4 py-2 mt-4 text-black transition-all duration-200 transform bg-yellow-100 rounded-full focus:bg-black focus:text-yellow-100 md:w-auto hover:scale-110 motion-reduce:transform-none"
+          data-id="${id}">
           Cancel Order
           </button>
       </div>
