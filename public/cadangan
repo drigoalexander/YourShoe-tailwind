@@ -1,0 +1,94 @@
+<!-- END: Cart empty wrapper -->
+
+          <!-- START: Table item 1 -->
+
+
+          <div class="flex flex-start flex-wrap items-center mb-4 -mx-4" data-row="1">
+            <div class="px-4 flex-none">
+              <div class="" style="width: 90px; height: 90px">
+                <img src="./images/content/balen4.jpg" alt="" class="object-cover rounded-xl w-full h-full" />
+              </div>
+            </div>
+            <div class="px-4 w-auto md:w-5/12 flex-1">
+              <div class="">
+                <h6 class="font-semibold text-lg md:text-xl leading-8">
+                  Balenciaga SPEED TRAINER
+                </h6>
+
+
+              </div>
+            </div>
+            <div class="px-4 w-auto md:w-5/12 flex-none md:flex-1 hidden md:block">
+              <div class="">
+                <h6 class="font-semibold text-lg">USD 595$</h6>
+              </div>
+            </div>
+            <div class="px-4 w-2/12">
+              <div class="text-center">
+                <button data-delete-item="1" class="text-red-600 border-none focus:outline-none px-3 py-1">
+                  X
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- END: Table item 1 -->
+
+          <!-- START: Table item 2 -->
+          <div class="flex flex-start flex-wrap items-center mb-4 -mx-4" data-row="2">
+            <div class="px-4 flex-none">
+              <div class="" style="width: 90px; height: 90px">
+                <img src="./images/content/yeezy.jpg" alt="" class="object-cover rounded-xl w-full h-full" />
+              </div>
+            </div>
+            <div class="px-4 w-auto md:w-5/12 flex-1">
+              <div class="">
+                <h6 class="font-semibold text-lg md:text-xl leading-8">
+                  YEEZY Boost 350 V2 Cream White
+                </h6>
+              </div>
+            </div>
+            <div class="px-4 w-auto md:w-5/12 flex-none md:flex-1 hidden md:block">
+              <div class="">
+                <h6 class="font-semibold text-lg">USD 450$</h6>
+              </div>
+            </div>
+            <div class="px-4 w-2/12">
+              <div class="text-center">
+                <button data-delete-item="2" class="text-red-600 border-none focus:outline-none px-3 py-1">
+                  X
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- END: Table item 2 -->
+
+          <!-- START: Table item 3 -->
+          <div class="flex flex-start flex-wrap items-center mb-4 -mx-4" data-row="3">
+            <div class="px-4 flex-none">
+              <div class="" style="width: 90px; height: 90px">
+                <img src="./images/content/hu2.jpg" alt="" class="object-cover rounded-xl w-full h-full" />
+              </div>
+            </div>
+            <div class="px-4 w-auto md:w-5/12 flex-1">
+              <div class="">
+                <h6 class="font-semibold text-lg md:text-xl leading-8">
+                  Adidas Pharell Williams Human Race
+                </h6>
+              </div>
+            </div>
+            <div class="px-4 w-auto md:w-5/12 flex-none md:flex-1 hidden md:block">
+              <div class="">
+                <h6 class="font-semibold text-lg">USD 399$</h6>
+              </div>
+            </div>
+            <div class="px-4 w-2/12">
+              <div class="text-center">
+                <button data-delete-item="3" class="text-red-600 border-none focus:outline-none px-3 py-1">
+                  X
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- END: Table item 3 -->
+        </div>
+        <!-- END: shipping cart -->

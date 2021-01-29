@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Your Daily Sneakers Needs</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="apple-touch-icon" href="images/content/favicon.png" />
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="./css/app.minify.css" />
+  <link rel="icon" href="images/content/favicon.png" />
+
+  <meta name="theme-color" content="#000" />
+  <link rel="icon" href="favicon.ico">
+  <link href="css/app.minify.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Add your site or application content here -->
+
+  <!-- START = Header-->
+  <header class="z-50 w-full px-4">
+    <div class="container py-10 mx-auto">
+      <div class="flex items-center flex-stretch">
+        <div class="flex items-center w-56">
+          <img src="images/design/yourshoe.png" alt="YOURSHOE">
+        </div>
+
+        <div class="w-full"></div>
+
+        <!-- START = Menu Humberger-->
+
+        <div class="w-auto">
+          <ul id="menu"
+            class="fixed inset-0 flex flex-col items-center justify-center invisible bg-white opacity-0 md:visible md:flex-row md:bg-transparent md:relative md:opacity-100">
+
+            <li class="py-6 mx-3 md:py-0">
+              <a href="index.html"
+                class="text-yellow-100 duration-300 md:text-yellow-100 hover:underline hover:text-black">Showcase</a>
+            </li>
+            <li class="py-6 mx-3 md:py-0">
+              <a href="details.html"
+                class="text-yellow-100 duration-300 md:text-yellow-100 hover:underline hover:text-black">Catalogue</a>
+            </li>
+            <li class="py-6 mx-3 md:py-0">
+              <a href="cart.html"
+                class="text-yellow-100 duration-300 md:text-yellow-100 hover:underline hover:text-black">Shipping</a>
+            </li>
+
+            <li class="py-6 mx-3 md:py-0">
+              <a href="request.html"
+                class="text-yellow-100 duration-300 md:text-yellow-100 hover:underline hover:text-black">Request</a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-auto">
+          <ul id="menu" class="flex items center">
+            <li class="block ml-6 md:hidden">
+              <button id="menu-toggler"
+                class="relative z-50 flex items-center justify-center w-8 h-8 text-black focus:outline-none">
+                <svg class="fill-current" width="18" height="17" viewBox="0 0 18 17" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.9773 0H1.04219C0.466585 0 0 0.279408 0 0.6241C0 0.968792 0.466668 1.2482 1.04219 1.2482H15.9773C16.5529 1.2482 17.0195 0.968792 17.0195 0.6241C17.0195 0.279358 16.5529 0 15.9773 0Z" />
+                  <path
+                    d="M15.9773 6.13794H1.04219C0.466585 6.13794 0 6.41735 0 6.76204C0 7.10673 0.466668 7.38614 1.04219 7.38614H15.9773C16.5529 7.38614 17.0195 7.10673 17.0195 6.76204C17.0195 6.4173 16.5529 6.13794 15.9773 6.13794Z" />
+                  <path
+                    d="M15.9773 12.2761H1.04219C0.466585 12.2761 0 12.5555 0 12.9002C0 13.2449 0.466668 13.5243 1.04219 13.5243H15.9773C16.5529 13.5243 17.0195 13.2449 17.0195 12.9002C17.0195 12.5555 16.5529 12.2761 15.9773 12.2761Z" />
+                </svg>
+              </button>
+            </li>
+
+            <li class="ml-6">
+              <a id="header-cart" href="cart.html"
+                class="flex items-center justify-center w-8 h-8 text-black cart cart-filled">
+                <svg class="fill-current" width="29" height="25" viewBox="0 0 29 25" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.8754 19.7671C9.61762 19.7671 8.59436 20.8077 8.59436 22.0868C8.59436 23.3659 9.61762 24.4065 10.8754 24.4065C12.1331 24.4065 13.1564 23.3659 13.1564 22.0868C13.1563 20.8077 12.1331 19.7671 10.8754 19.7671ZM10.8754 23.1112C10.3199 23.1112 9.86796 22.6515 9.86796 22.0867C9.86796 21.5218 10.3199 21.0622 10.8754 21.0622C11.4308 21.0622 11.8828 21.5218 11.8828 22.0867C11.8828 22.6517 11.4308 23.1112 10.8754 23.1112Z" />
+                  <path
+                    d="M18.8764 19.7671C17.6186 19.7671 16.5953 20.8077 16.5953 22.0868C16.5953 23.3659 17.6186 24.4065 18.8764 24.4065C20.1342 24.4065 21.1575 23.3659 21.1575 22.0868C21.1574 20.8077 20.1341 19.7671 18.8764 19.7671ZM18.8764 23.1112C18.3209 23.1112 17.869 22.6515 17.869 22.0867C17.869 21.5218 18.3209 21.0622 18.8764 21.0622C19.4319 21.0622 19.8838 21.5218 19.8838 22.0867C19.8838 22.6517 19.4319 23.1112 18.8764 23.1112Z" />
+                  <path
+                    d="M19.438 7.55396H10.3122C9.96051 7.55396 9.67542 7.84388 9.67542 8.20155C9.67542 8.55922 9.96056 8.84915 10.3122 8.84915H19.438C19.7897 8.84915 20.0748 8.55922 20.0748 8.20155C20.0748 7.84383 19.7897 7.55396 19.438 7.55396Z" />
+                  <path
+                    d="M18.9414 10.917H10.8089C10.4572 10.917 10.1721 11.2069 10.1721 11.5646C10.1721 11.9223 10.4572 12.2122 10.8089 12.2122H18.9413C19.293 12.2122 19.5781 11.9223 19.5781 11.5646C19.5781 11.207 19.293 10.917 18.9414 10.917Z" />
+                  <path
+                    d="M25.6499 4.66861C25.407 4.3655 25.0472 4.19168 24.6626 4.19168H4.82655L4.42595 2.21405C4.34232 1.80151 4.06563 1.45512 3.68565 1.28734L0.890528 0.0535392C0.567841 -0.0890044 0.192825 0.0615756 0.0528584 0.389627C-0.0872597 0.717781 0.0608116 1.0992 0.383347 1.24154L3.17852 2.47539L6.2598 17.6859C6.38117 18.285 6.90578 18.7197 7.50723 18.7197H22.7635C23.1152 18.7197 23.4003 18.4298 23.4003 18.0721C23.4003 17.7145 23.1152 17.4245 22.7635 17.4245H7.50728L7.13247 15.5743H22.8814C23.4828 15.5743 24.0075 15.1395 24.1288 14.5405L25.9101 5.74807C25.9876 5.36521 25.8928 4.97168 25.6499 4.66861ZM22.8814 14.2792H6.87012L5.08895 5.48684L24.6626 5.48689L22.8814 14.2792Z" />
+                  <g class="text-yellow-100">
+                    <circle cx="25" cy="4.89023" r="4" class="fill-current dot" />
+                  </g>
+                </svg>
+
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- END = Menu Hamburger-->
+      </div>
+
+    </div>
+
+  </header>
+  <!-- END = Header-->
+
+  <!-- START : BREADCRUMP -->
+  <section class="px-4 py-4 bg-yellow-200">
+    <div class="container mx-auto">
+      <ul class="breadcrumb">
+        <li>
+          <a href="index.html">Showcase</a>
+        </li>
+        <li>
+          <a href="details.html">Catalogue</a>
+        </li>
+        <li>
+          <a href="#" aria-label="current-page">Shipping</a>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+  <!-- END : BREADCRUMP -->
+
+  <!-- START: cart -->
+  <section class="md:py-16">
+
+    <div class="container mx-auto px-4">
+      <div class="flex -mx-4 flex-wrap">
+        <!-- START: shipping cart -->
+        <div class="w-full px-4 mb-4 md:w-8/12 md:mb-0" id="shopping-cart">
+          <div class="flex flex-start mb-4 mt-8 pb-3 border-b border-gray-200 md:border-b-0">
+            <h3 class="text-2xl">Shopping Cart</h3>
+          </div>
+
+          <!-- START: Table Title -->
+          <div class="border-b border-gray-200 mb-4 hidden md:block">
+            <div class="flex flex-start items-center pb-2 -mx-4">
+              <div class="px-4 flex-none">
+                <div class="" style="width: 90px">
+                  <h6>Photo</h6>
+                </div>
+              </div>
+              <div class="px-4 w-5/12">
+                <div class="">
+                  <h6>Product</h6>
+                </div>
+              </div>
+              <div class="px-4 w-5/12">
+                <div class="">
+                  <h6>Price</h6>
+                </div>
+              </div>
+              <div class="px-4 w-2/12">
+                <div class="text-center">
+                  <h6>Action</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END: Table Title -->
+
+          <!-- START: Cart empty wrapper -->
+          <p id="cart-empty" class="hidden text-center py-8">
+            Ooops... Cart is empty
+            <a href="details.html" class="underline">Shop Now!</a>
+          </p>
+          <!-- END: Cart empty wrapper -->
+
+        
+        </div>
+        <!-- END: shipping cart -->
+
+
+
+        
+          <!-- START: shipping details -->
+          <div class="w-full md:px-4 md:w-4/12" id="shipping-detail">
+            <div class="bg-gray-100 px-4 py-6 md:p-8 md:rounded-3xl">
+              <form id="ui2" class="ui2" action="success.html">
+                <div class="flex flex-start mb-6">
+                  <h3 class="text-2xl">Shipping Details</h3>
+                </div>
+
+                <!-- START: input complete name -->
+                <div class="flex flex-col mb-4">
+                  <label for="complete-name" class="text-sm mb-2">Complete Name</label>
+                  <input data-input type="text" id="complete-name"
+                    class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none"
+                    placeholder="Input your name" />
+                </div>
+                <!-- END: input complete name -->
+
+                <!-- START: email address -->
+                <div class="flex flex-col mb-4">
+                  <label for="email-address" class="text-sm mb-2">Email address</label>
+                  <input data-input type="email" id="email-address"
+                    class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none"
+                    placeholder="Input your email address" />
+                </div>
+                <!-- END: email address -->
+
+                <!-- START: address -->
+                <div class="flex flex-col mb-4">
+                  <label for="address" class="text-sm mb-2">Address</label>
+                  <input data-input type="text" id="address"
+                    class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none"
+                    placeholder="Input your address" />
+                </div>
+                <!-- END: address -->
+
+                <!-- START: Phone Number -->
+                <div class="flex flex-col mb-4">
+                  <label for="phone-number" class="text-sm mb-2">Phone Number</label>
+                  <input data-input type="tel" id="phone-number"
+                    class="border border-gray-200 rounded-lg px-4 py-2 bg-white text-sm focus:border-blue-200 focus:outline-none"
+                    placeholder="Input your phone number" />
+                </div>
+                <!-- END: Phone Number -->
+
+                <!-- START: Choose courier -->
+                <div class="flex flex-col mb-4">
+                  <label class="text-sm mb-2">Choose courier</label>
+
+                  <div class="flex -mx-2 flex-wrap">
+                    <!-- START: courier 1 -->
+                    <div class="px-2 w-6/12 h-24 mb-4">
+                      <button data-value="JNE" data-name="courier" type="button"
+                        class="border border-gray-200 focus:outline-none focus:colos.border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="./images/content/jne.jpg" alt="" class="object-contain max-h-full rounded-full" />
+                      </button>
+                    </div>
+                    <!-- END: courier 1 -->
+
+                    <!-- START: courier 2 -->
+                    <div class="px-2 w-6/12 h-24 mb-4">
+                      <button data-value="J&T" data-name="courier" type="button"
+                        class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="./images/content/jet.jpg" alt="" class="object-contain max-h-full rounded-xl" />
+                      </button>
+                    </div>
+                    <!-- END: courier 2 -->
+                  </div>
+
+                </div>
+                <!-- END: Choose courier -->
+
+                <!-- START: Choose Payment -->
+                <div class="flex flex-col mb-4">
+                  <label class="text-sm mb-2">Choose Payment</label>
+
+                  <div class="flex -mx-2 flex-wrap">
+                    <!-- START: payment 1 -->
+                    <div class="px-2 w-6/12 h-24 mb-4">
+                      <button data-value="ShopeePay" data-name="payment" type="button"
+                        class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="./images/content/shopeepay.png" alt="" class="object-contain max-h-full rounded-xl" />
+                      </button>
+                    </div>
+                    <!-- END: payment 1 -->
+
+                    <!-- START: payment 2 -->
+                    <div class="px-2 w-6/12 h-24 mb-4">
+                      <button data-value="Dana" data-name="payment" type="button"
+                        class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="./images/content/dana.png" alt="" class="object-contain max-h-full rounded-xl" />
+                      </button>
+                    </div>
+                    <!-- END: payment 2 -->
+
+                    <!-- START: payment 3 -->
+                    <div class="px-2 w-6/12 h-24 mb-4">
+                      <button data-value="Gopay" data-name="payment" type="button"
+                        class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="./images/content/gopay.jpg" alt="" class="object-contain max-h-full" />
+                      </button>
+                    </div>
+                    <!-- END: payment 3 -->
+
+                    <!-- START: payment 4 -->
+                    <div class="px-2 w-6/12 h-24 mb-4">
+                      <button data-value="Ovo" data-name="payment" type="button"
+                        class="border border-gray-200 focus:outline-none focus:border-red-200 flex items-center justify-center rounded-xl bg-white w-full h-full">
+                        <img src="./images/content/ovo.jpg" alt="" class="object-contain max-h-full rounded-xl" />
+                      </button>
+                    </div>
+                    <!-- END: payment 4 -->
+                  </div>
+                </div>
+                <!-- END: Choose Payment -->
+
+                <div class="text-center">
+                  <button type="submit" 
+                    class="px-6 py-2 mt-4 text-black transition duration-200 transform bg-yellow-100 rounded-full hover:bg-black hover:text-yellow-100 hover:scale-110 motion-reduce:transform-none">
+                    <!-- <a href="/success.html"> -->
+                      Checkout Now
+                    <!-- </a> -->
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        
+          <!-- END: shipping details -->
+      </div>
+    </div>
+  </section>
+  <!-- END: cart -->
+  
+
+  <!-- START: Aside Menu / Footer Menu -->
+  <section class="">
+    <div class="px-4 py-12 bg-yellow-100">
+      <div class="flex justify-center mb-8">
+        <img src="./images/design/yourshoe2.png" alt="" />
+      </div>
+      <aside class="container mx-auto">
+        <div class="flex flex-wrap justify-center md:space-x-4">
+          <!-- START: Item aside menu 1 -->
+          <div class="w-full mb-4 md:w-2/12 md:mb-0 accordion">
+            <h5 class="relative mb-2 text-xl font-semibold">
+              Overview
+            </h5>
+            <ul class="invisible h-0 overflow-hidden md:h-auto md:visible">
+              <li>
+                <a href="#" class="block py-1 hover:underline">Shipping</a>
+              </li>
+              <li>
+                <a href="#" class="block py-1 hover:underline">Refund</a>
+              </li>
+              <li>
+                <a href="#" class="block py-1 hover:underline">Redeem</a>
+              </li>
+            </ul>
+          </div>
+          <!-- END: Item aside menu 1 -->
+
+          <!-- START: Item aside menu 2 -->
+          <div class="w-full mb-4 md:w-2/12 md:mb-0 accordion">
+            <h5 class="relative mb-2 text-xl font-semibold">
+              Company
+            </h5>
+            <ul class="invisible h-0 overflow-hidden md:h-auto md:visible">
+              <li>
+                <a href="#" class="block py-1 hover:underline">About</a>
+              </li>
+              <li>
+                <a href="#" class="block py-1 hover:underline">Career</a>
+              </li>
+              <li>
+                <a href="#" class="block py-1 hover:underline">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- END: Item aside menu 2 -->
+
+          <!-- START: Item aside menu 3 -->
+          <div class="w-full mb-4 md:w-2/12 md:mb-0 accordion">
+            <h5 class="relative mb-2 text-xl font-semibold">
+              Explore
+            </h5>
+            <ul class="invisible h-0 overflow-hidden md:h-auto md:visible">
+              <li>
+                <a href="#" class="block py-1 hover:underline">Terms & Cond</a>
+              </li>
+              <li>
+                <a href="#" class="block py-1 hover:underline">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="block py-1 hover:underline">For Developer</a>
+              </li>
+            </ul>
+          </div>
+          <!-- END: Item aside menu 3 -->
+
+          <!-- START: Item aside menu 4 -->
+          <div class="w-full mb-4 md:w-3/12 md:mb-0">
+            <h5 class="relative mb-2 text-xl font-semibold">
+              Newsletter
+            </h5>
+            <form action="#">
+              <label class="relative w-full">
+                <input type="text" class="w-full px-5 py-3 bg-gray-100 rounded-xl focus:outline-none"
+                  placeholder="Your email adress" />
+                <button class="absolute right-0 p-3 text-white bg-black rounded-xl">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M23.6177 0.411971C23.6163 0.410624 23.6152 0.409187 23.6138 0.407839C23.6124 0.406492 23.6109 0.405414 23.6095 0.404157C23.236 0.049307 22.7002 -0.0573008 22.2098 0.126411L0.833871 8.13353C0.268743 8.34518 -0.0623361 8.87521 0.0098048 9.4523C0.0821332 10.0294 0.53462 10.4694 1.13589 10.547L11.5833 11.8968C11.6028 11.8994 11.6185 11.9143 11.6212 11.9332L13.0301 21.9417C13.1112 22.5177 13.5704 22.9512 14.1729 23.0204C14.2279 23.0268 14.2824 23.0298 14.3364 23.0298C14.8735 23.0298 15.3486 22.7229 15.5495 22.231L23.9077 1.75274C24.0994 1.28302 23.9882 0.76983 23.6177 0.411971ZM1.30534 9.34475C1.2819 9.34169 1.27136 9.34039 1.26728 9.30788C1.26325 9.27537 1.27319 9.27159 1.29508 9.26347L21.2946 1.77187L11.9404 10.7333C11.8794 10.7163 1.30534 9.34475 1.30534 9.34475ZM14.37 21.7892C14.3614 21.8102 14.358 21.8198 14.3236 21.8158C14.2897 21.8119 14.2883 21.8017 14.2852 21.7794C14.2852 21.7794 12.8535 11.6495 12.8358 11.5911L22.19 2.62972L14.37 21.7892Z"
+                      fill="#fff" /></svg>
+                </button>
+              </label>
+            </form>
+          </div>
+          <!-- END: Item aside menu 4 -->
+
+        </div>
+      </aside>
+    </div>
+  </section>
+  <!-- END: Aside Menu / Footer Menu -->
+
+  <!-- START: Footer -->
+  <footer class="flex justify-center px-4 py-8 text-center">
+    <p class="text-sm">
+      Copyright 2021 • All Rights Reserved YourShoe by Drigoasihombing
+    </p>
+  </footer>
+  <!-- END: Footer -->
+
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () {
+      ga.q.push(arguments);
+    };
+    ga.q = [];
+    ga.l = +new Date();
+    ga("create", "UA-XXXXX-Y", "auto");
+    ga("set", "anonymizeIp", true);
+    ga("set", "transport", "beacon");
+    ga("send", "pageview");
+  </script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyC-Wn5ElirRgaIsM0gFkN_Nwx48kOKl_tM",
+      authDomain: "yourshoe-rplpwa.firebaseapp.com",
+      projectId: "yourshoe-rplpwa",
+      storageBucket: "yourshoe-rplpwa.appspot.com",
+      messagingSenderId: "934333343863",
+      appId: "1:934333343863:web:b6742cf4482da70870fe72",
+      measurementId: "G-1HMJZ6Q8PY"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    firebase.analytics();
+  </script>
+<script src="/js/dbemail.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/ui2.js"></script>
+  <script >generateBelanja()</script>
+  <!-- <script src="/js/dbcatalogue.js"></script> -->
+</body>
+
+</html>
